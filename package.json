@@ -6,12 +6,20 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.2.1",
     "mongodb": "^3.0.7",
+    "mongoose": "^5.0.16",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
     "password-hash": "^1.2.2"
   }
 }
