@@ -81,6 +81,12 @@ app.get(
     }
 );
 
+app.post("/api/check", (req, res) =>
+{
+    res.status(200);
+    res.send('ok');
+});
+
 app.post("/api/login", function (req, res)
 {
     console.log(req.body.login, req.body.password);
