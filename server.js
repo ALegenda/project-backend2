@@ -60,18 +60,18 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-mongodb.MongoClient.connect(
-    process.env.MONGODB_URI || url,
-    (err, database) =>
-    {
-        if (err)
-            return console.log(err);
+//mongodb.MongoClient.connect(
+  //  process.env.MONGODB_URI || url,
+    //(err, database) =>
+    //{
+     //   if (err)
+       //     return console.log(err);
 
-        db = database.db('project-db');
-        console.log(`connected`);
+     //   db = database.db('project-db');
+       // console.log(`connected`);
 
-    }
-);
+    //}
+//);
 
 app.get(
     '/',
