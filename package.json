@@ -6,7 +6,6 @@
   },
   "main": "server.js",
   "scripts": {
-    //"start": "nodemon server.js"
     "start": "node server.js"
   },
   "dependencies": {
